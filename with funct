@@ -1,0 +1,37 @@
+sharagrossp@gmail.com
+shela.norton83@gmail.com
+kramertaylor74@gmail.com
+vilma.mosley12@gmail.com
+juliacurtis771@gmail.com
+trashdayjuli12@gmail.com
+juliaep50@gmail.com
+julihantus@gmail.com
+
+
+ #include <stdio.h>
+#include <string.h>
+int main ()
+{
+struct Znak
+{
+char name[100];
+char zodiac[9];
+int bday[3];
+};
+struct Znak book[8];
+for (int i=0;i<8;i++) 
+{
+printf("Input surname, name and second name: ");
+gets(book[i].name);
+printf("Input astrological sign: ");
+scanf("%s",&book[i].zodiac);
+printf("Input birthday: ");
+char c;
+scanf("%d%c%d%c%d%c",&book[i].bday[0],&c,&book[i].bday[1],&c,&book[i].bday[2],&c);
+}
+int month;
+printf("Input month: ");
+scanf("%d",&month);
+bool flag=false;
+for (int j=0;j<8;j++)
+if (book[j].bday[1]==month)
