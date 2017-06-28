@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <string.h>
+int main ()
+{
+struct Znak
+{
+char name[100];
+char zodiac[9];
+int bday[3];
+};
+struct Znak book[8];
+for (int i=0;i<8;i++) 
+{
